@@ -70,7 +70,7 @@ export class Headphones {
     }
 
     close(): void {
-        this._hid.close();
+        this._hid?.close();
     }
 }
 
