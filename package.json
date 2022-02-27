@@ -1,6 +1,6 @@
 {
   "name": "arctics-status",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Shows Steel Series Arctics device status in system tray",
   "private": true,
   "main": "./dist/main.js",

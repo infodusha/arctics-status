@@ -4,12 +4,10 @@ import {getAssetPath} from './helpers';
 
 export enum TRAY_ICON {
     NOT_CONNECTED = 'grey',
+    CHARGE = 'blue',
     OK = 'green',
-    OK_CHARGE = 'green_charge',
     WARN = 'yellow',
-    WARN_CHARGE = 'yellow_charge',
     BAD = 'red',
-    BAD_CHARGE = 'red_charge',
 }
 
 export interface TrayInfo {
@@ -39,5 +37,5 @@ function handleExitClick(): void {
 }
 
 function getImagePath(icon: TRAY_ICON): string {
-    return getAssetPath(`icons/${icon}.ico`);
+    return getAssetPath(`icons/${icon}.png`);
 }
