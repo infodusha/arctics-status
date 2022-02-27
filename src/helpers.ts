@@ -1,5 +1,5 @@
 import {app} from 'electron';
-import * as path from 'path';
+import path from 'path';
 
 export function getAssetPath(rootPath: string): string {
     if (app.isPackaged) {

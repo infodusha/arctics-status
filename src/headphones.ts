@@ -1,4 +1,4 @@
-import * as nodeHid from 'node-hid';
+import nodeHid from 'node-hid';
 import {Device, HID} from 'node-hid';
 
 nodeHid.setDriverType('libusb');

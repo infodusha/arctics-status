@@ -1,5 +1,5 @@
 import {BatteryInfo, Headphones} from './headphones';
-import {updateTrayInfo} from "./tray";
+import {updateTrayInfo} from './tray';
 import {getNotConnectedInfo, getTooltip, getTrayIcon} from './info';
 
 export function loop(headphones: Headphones): void {
