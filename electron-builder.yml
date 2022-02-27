@@ -11,3 +11,5 @@ extraResources:
   - assets/**/*
 win:
   icon: app.png
+  publish:
+    - github

@@ -11,10 +11,12 @@
     "watch": "run-p watch:*",
     "start": "run-s tsc start:electron",
     "build": "run-s tsc build:dist",
+    "release": "run-s tsc release:dist",
     "start:electron": "electron ./dist/main.js",
     "watch:tsc": "tsc -w",
     "watch:electron": "nodemon --watch dist --exec  \"./node_modules/.bin/electron .\"",
-    "build:dist": "electron-builder --win"
+    "build:dist": "electron-builder --win",
+    "release:dist": "electron-builder --win --publish always"
   },
   "author": "infodusha",
   "license": "Apache-2.0",
