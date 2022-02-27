@@ -1,5 +1,6 @@
 import {app, Menu, Tray} from 'electron';
 import {getNotConnectedInfo} from './info';
+import {getAssetPath} from './helpers';
 
 export enum TRAY_ICON {
     NOT_CONNECTED = 'grey',
@@ -38,5 +39,5 @@ function handleExitClick(): void {
 }
 
 function getImagePath(icon: TRAY_ICON): string {
-    return `assets/icons/${icon}.ico`;
+    return getAssetPath(`icons/${icon}.ico`);
 }

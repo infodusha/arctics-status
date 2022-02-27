@@ -1,0 +1,13 @@
+appId: "ru.infodusha.arctics-status"
+productName: "Arctics Status"
+copyright: "Copyright © 2022 ${author}"
+directories:
+  output: build
+files:
+  - dist/**/*
+  - package-lock.json
+  - package.json
+extraResources:
+  - assets/**/*
+win:
+  icon: app.png
